@@ -1,12 +1,12 @@
-16e00784acef8f69bbcf76c4e476fa61 *DESCRIPTION
+9a96b1606ee621f92561832a00449c2d *DESCRIPTION
 7a2cb9a14fa6028b83d498cab84ea61f *NAMESPACE
 a22e4ac84efca11296bcccf4bf63cf6f *R/commoncrawl.R
 9325e6778dfc49bb4bb879cc13cc6ce3 *R/dependencies.R
-193e944b3c02609617d580166aa50c22 *R/sparkwarc.R
-66da4552348ad4a9aa947ff011b7b08f *README.md
-efa2292061cfb2400d80e32e9842b404 *inst/java/sparkwarc-1.5-2.10.jar
-a1687d9fa0f26d0da0255a3fbc0be50b *inst/java/sparkwarc-1.6-2.10.jar
-cb0e7f904016ab10ee7a01a29a23b2a1 *inst/java/sparkwarc-2.0-2.11.jar
+03f56307938e38c374ab0d314022b472 *R/sparkwarc.R
+ec011620124c26f98579eebe17c51b44 *README.md
+4f915e60192ddbc75903897eb66f4890 *inst/java/sparkwarc-1.5-2.10.jar
+41ed4f3ee759272061de48ae66ca7245 *inst/java/sparkwarc-1.6-2.10.jar
+43024b70d3a34ac51b4ad7bcd4f0d2ec *inst/java/sparkwarc-2.0-2.11.jar
 bbbc7f387aee2bae6c92714428265c7e *inst/samples/sample.warc
 367f2b2697835b370c4d412e4201c020 *inst/samples/sample.warc.gz
 75c45a50fb7e009e0a6707643fdb4910 *inst/samples/sample.warc.paths
@@ -14,6 +14,6 @@ bbbc7f387aee2bae6c92714428265c7e *inst/samples/sample.warc
 5ef0d112afd8dd1a704d06132fc2a4d5 *inst/samples/sample.wat.gz
 7f629c4ee8b45175187b5321475a17cb *inst/samples/sample.wet
 f9c5d96b0ccaf7c2d06725952c56a2bf *inst/samples/sample.wet.gz
-6eeb40f7707919bc051b69220e8c89cc *java/SparkWARC.scala
+0cb3891a08699a1dd161638cf3118129 *java/SparkWARC.scala
 40b9b96e1cc9c62f564d0aaf561c1e77 *man/cc_warc.Rd
-fb9afe48b6e8472bb50b32c3a1d99b71 *man/spark_read_warc.Rd
+484191db64059d0902ebca26d1e7c903 *man/spark_read_warc.Rd
