@@ -4,8 +4,18 @@
 \alias{spark_read_warc}
 \title{Reads a WARC File into Apache Spark}
 \usage{
-spark_read_warc(sc, name, path, repartition = 0L, memory = TRUE,
-  overwrite = TRUE, group = FALSE, parse = FALSE, ...)
+spark_read_warc(
+  sc,
+  name,
+  path,
+  repartition = 0L,
+  memory = TRUE,
+  overwrite = TRUE,
+  match_warc = "",
+  match_line = "",
+  parser = c("r", "scala"),
+  ...
+)
 }
 \arguments{
 \item{sc}{An active \code{spark_connection}.}
@@ -24,10 +34,12 @@ is, should the table be cached?)}
 \item{overwrite}{Boolean; overwrite the table with the given name if it
 already exists?}
 
-\item{group}{\code{TRUE} to group by warc segment. Currently supported
-only in HDFS and uncompressed files.}
+\item{match_warc}{include only warc files mathcing this character string.}
 
-\item{parse}{\code{TRUE} to parse warc into tags, attribute, value, etc.}
+\item{match_line}{include only lines mathcing this character string.}
+
+\item{parser}{which parser implementation to use? Options are "scala"
+or "r" (default).}
 
 \item{...}{Additional arguments reserved for future use.}
 }
@@ -36,6 +48,7 @@ Reads a WARC (Web ARChive) file into Apache Spark using sparklyr.
 }
 \examples{
 
+\dontrun{
 library(sparklyr)
 sc <- spark_connect(master = "spark://HOST:PORT")
 df <- spark_read_warc(
@@ -47,6 +60,6 @@ df <- spark_read_warc(
 )
 
 spark_disconnect(sc)
-
 }
 
+}
